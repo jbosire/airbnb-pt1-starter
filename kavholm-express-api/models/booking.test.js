@@ -92,7 +92,7 @@ describe("Booking", () => {
       await Booking.createBooking(newBooking, listing, user);
 
     } catch(error){
-      expect(err instanceof BadRequestError).toBeTruthy()
+      expect(error instanceof BadRequestError).toBeTruthy()
 
     }
   });
